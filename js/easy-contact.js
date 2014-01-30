@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $('#eac-form').submit(function(e){
+    var eacForm = $('#eac-form');
+    eacForm.submit(function(e){
         var eacAlert = $('#eac-alert');
         eacAlert.fadeOut();
 
@@ -10,9 +11,10 @@ $(document).ready(function(){
                 eacAlert.html(data.log);
                 eacAlert.fadeIn();
             }
-            else{
+            else {
                 var eacThanks = $('#eac-thanks');
-                eacAlert.html('Thank you for the feedback!');
+                eacThanks.html('Your message has been sent. Thanks for the feedback!');
+                eacForm.fadeOut();
                 eacThanks.fadeIn();
             }
         });

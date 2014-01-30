@@ -39,10 +39,9 @@ switch ($op) {
     <meta name="keywords" content="easy ajax contact form">
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/easy-contact.css" rel="stylesheet">
 
-   <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/easy-contact.js" type="text/javascript"></script>
 
   </head>
@@ -50,11 +49,26 @@ switch ($op) {
     <div class="container">
 
         <div class="page-header">
-            <h1>Easy Ajax Contact Form <small>DEMO</small></h1>
+            <h1>
+                Easy Ajax Contact Form <small>DEMO</small>
+
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Example 1 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="example.php">Example 1</a></li>
+                        <li><a href="example-2.php">Example 2</a></li>
+                        <li><a href="example-3.php">Example 3</a></li>
+                    </ul>
+                </div>
+            </h1>
         </div>
 
-        <div class="col-sm-9">
+        <div class="col-md-10 col-lg-9">
             <p class="alert alert-danger" id="eac-alert" style="display: none"></p>
+            <p class="alert alert-success" id="eac-thanks" style="display: none"></p>
+
             <form class="form form-horizontal" id="eac-form" method="post">
 
                 <div class="col-sm-6">
@@ -92,14 +106,14 @@ switch ($op) {
                     </div>
                 </div>
                 <div class="clearfix"></div>
+                <hr/>
                 <button type="submit" class="btn btn-primary pull-right">Submit</button>
             </form>
-            <p class="alert alert-success" id="eac-thanks" style="display: none"></p>
         </div>
     </div>
 
     <footer class="text-center" style="position: absolute; bottom:10px; width:100%;">
-        © 2014 Easy Ajax Contact Form
+        © 2014 Easy Ajax Contact Form - Made with <span class="glyphicon glyphicon-heart"></span>
     </footer>
   </body>
 </html>
