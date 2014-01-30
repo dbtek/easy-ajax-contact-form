@@ -44,6 +44,19 @@ switch ($op) {
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/easy-contact.js" type="text/javascript"></script>
 
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 4px;
+            margin-top: 20px;
+            min-height: 600px;
+            border: 1px solid #bdc3c7;
+        }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -65,7 +78,7 @@ switch ($op) {
             </h1>
         </div>
 
-        <div class="col-md-10 col-lg-9">
+        <div class="col-md-10 col-lg-9 col-md-offset-1">
             <p class="alert alert-danger" id="eac-alert" style="display: none"></p>
             <p class="alert alert-success" id="eac-thanks" style="display: none"></p>
 
