@@ -42,7 +42,7 @@ try {
         throw new Exception('Message field is too short.');
 
     if ((int)$_POST['captcha'] != $_SESSION['expected'])
-        throw new Exception('Captcha code is wrong.');
+        throw new Exception('Captcha field is not valid.');
 
     $message->send($emailAddresses);
     echo json_encode(array('status' => 'ok','log' => 'Mail sent.'));
